@@ -1,11 +1,3 @@
-<?php 
-    session_start();
-    if(isset($_SESSION['Usuario'])){
-        header("location: Main.php");
-    }
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,20 +28,20 @@
             
             <!--Formulario Logins-->
             <div class="contenedor__login-register">
-                <form action="php/login_usuario.php"method="POST" class="formulario__login">
+                <form action="" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correro Electronico" name="correo">
-                    <input type="password" placeholder="Contraseña" name="contrasena">
+                    <input type="text" placeholder="Correro Electronico">
+                    <input type="text" placeholder="Contraseña">
                     <button>Entrar</button>
                     <img src="..//LOGIN CHOCITA/assets/images/Logo.png" alt="Logo">
                 </form>
             <!--Formulario Registros-->
-                <form action="php/registro_usuario.php" method="POST" class="formulario__register">
+                <form action="" class="formulario__register">
                     <h2>Regístrarse</h2>
-                    <input type="text" placeholder="Nombre Completo" name="nombre_completo">
-                    <input type="text" placeholder="Correo Electroníco" name="correo">
-                    <input type="text" placeholder="Usuario" name="usuario">
-                    <input type="password" placeholder="Contraseña" name="contrasena">
+                    <input type="text" placeholder="Nombre Completo">
+                    <input type="text" placeholder="Correo Electroníco">
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
                     <button>Regístrarse</button>
                     <img src="..//LOGIN CHOCITA/assets/images/Logo.png" alt="Logo">
                 </form>
